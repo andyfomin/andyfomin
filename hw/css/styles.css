@@ -13,55 +13,68 @@ body {
 .wrapper {
     padding: 20px;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 .header {
-
+  
 }
     
 .menu {
     text-align: center;
-  }
-  
+    margin-top: 20px;
+}
   .menu li {
       display: inline-block;
-  }
-
+}
   .menu a {
+      width: 100%;
       padding: 20px 30px;
-      display: block;
       text-transform: uppercase;
       color: grey; 
-      font-size: 14px;
   }
   .menu a:hover {
       color: rgb(72, 174, 199);
   }
   .content {
       display: inline-block;
-      width: 50%;
-      margin-right: -4px;
-      
+      width: 49%;
       padding: 20px;
   }
-  img {
+  .content img {
     width: 100%;
     padding: 20px;
   }
- 
 .h {
     width: 100%;
     display: inline-block;
-    padding: 20px;
+    padding: 10px 20px;
     text-transform: uppercase;
     color: grey; 
     font-size: 16px;
+    font-family: sans-serif;
 }
 h1 {
+    font-size: 30px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
     display: inline-block;
     padding: 20px;
+    
 }
 .text {
-      display: inline-block;
-      padding: 20px;
+    display: inline-block;
+    padding: 20px;
+        font-size: 16px;
+        font-family: "PlayfairDisplay";
+        color: rgb(98, 98, 98);
+        line-height: 1.714;
+}
+      
+      
+.main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
