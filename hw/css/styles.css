@@ -87,3 +87,9 @@ h1 {
   padding: 15px 30px;
   color: grey;
   border: 1px solid black;
+}
+.footer a:hover {
+  background-color: silver;
+  color: rgb(72, 174, 199);
+  border: 0;
+}
