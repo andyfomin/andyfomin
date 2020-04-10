@@ -6,16 +6,16 @@
     list-style: none; 
 }
 body {
-    width: 100vw;
-    height: 100vh;
-    font-size: 16px;
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
 }
 .wrapper {
-    padding: 20px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  padding: 20px;
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
   
 .menu {
     text-align: center;
