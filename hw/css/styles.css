@@ -13,35 +13,40 @@ body {
 .wrapper {
   padding: 20px;
   width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+
+.menu {
+  padding-top: 20px;
 }
   
 .menu ul {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0px;
 }
   .menu li {
       display: inline-block;
+      margin: 0px 30px;
 }
   .menu a {
-      padding: 20px 30px;
       text-transform: uppercase;
       color: grey; 
   }
   .menu a:hover {
       color: rgb(72, 174, 199);
   }
-  .content {
+  .section {
       display: inline-block;
       width: 49%;
       padding: 20px;
   }
-  .content img {
-    width: 100%;
+  .images {
     padding: 20px;
   }
-.h {
+  .images img {
+    width: 100%;
+  }
+.subtitle {
     width: 100%;
     display: inline-block;
     padding: 10px 20px;
@@ -50,7 +55,7 @@ body {
     font-size: 16px;
     font-family: sans-serif;
 }
-h1 {
+.title {
     font-size: 30px;
     color: rgb(98, 98, 98);
     display: inline-block;
@@ -68,13 +73,15 @@ h1 {
       
 .main {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+}
+
+.footer {
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 .footer ul {
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
 }
 .footer li {
   display: inline-block;
