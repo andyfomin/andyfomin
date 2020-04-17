@@ -55,7 +55,8 @@ main {
   }
   .shop {
     width: 100%;
-    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
   }
   .section {
@@ -74,13 +75,7 @@ main {
       padding-top: 10px;
       padding-bottom: 10px;
       margin-top: -4px;
-  }
-  .name:hover {
-      background-color: #1abc9c;
-  }
-  .fff a {
-      padding-left: 5px;
-      display: block;
+      padding-left: 10px;
       color: #ffffff;
       text-transform: uppercase;
       font-family: sans-serif;
@@ -88,6 +83,13 @@ main {
       font-weight: bold;
       text-align: left;
   }
+  .name:hover {
+      background-color: #1abc9c;
+  }
+  .list {
+      width: 100%;
+  }
+      
   .price {
     display: inline-block;
     width: 20%;
@@ -95,20 +97,15 @@ main {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: -4px;
-    margin-left: -4px;
-  }
-  .price a {
-    text-align: center;
-    display: block;
+    margin-left: -px;
     color: #ffffff;
     text-transform: uppercase;
     font-family: sans-serif;
     font-size: 14px;
     font-weight: bold;
+    text-align: center;
   }
-  .list {
-      width: 100%;
-  }
+
 .footer {
     width: 100%;
     margin-top: 60px;
