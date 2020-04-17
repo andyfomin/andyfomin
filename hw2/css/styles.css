@@ -78,7 +78,7 @@ main {
   .name:hover {
       background-color: #1abc9c;
   }
-  .name a {
+  .fff a {
       padding-left: 5px;
       display: block;
       color: #ffffff;

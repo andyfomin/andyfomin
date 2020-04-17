@@ -11,13 +11,13 @@ body {
   font-size: 16px;
 }
 .wrapper {
-  padding: 20px;
+  padding-top: 40px;
   width: 1300px;
   margin: 0 auto;
 }
 
 .menu {
-  padding-top: 20px;
+  
 }
   
 .menu ul {
@@ -26,11 +26,13 @@ body {
 }
   .menu li {
       display: inline-block;
-      margin: 0px 30px;
+      margin: 0px 10px;
+      padding: 10px;
 }
   .menu a {
       text-transform: uppercase;
       color: grey; 
+      padding: inherit;
   }
   .menu a:hover {
       color: rgb(72, 174, 199);
@@ -41,7 +43,7 @@ body {
       padding: 20px;
   }
   .images {
-    padding: 20px;
+  
   }
   .images img {
     width: 100%;
@@ -49,7 +51,8 @@ body {
 .subtitle {
     width: 100%;
     display: inline-block;
-    padding: 10px 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-transform: uppercase;
     color: grey; 
     font-size: 16px;
@@ -59,21 +62,24 @@ body {
     font-size: 30px;
     color: rgb(98, 98, 98);
     display: inline-block;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     
 }
 .text {
     display: inline-block;
-    padding: 20px;
-        font-size: 16px;
-        color: rgb(98, 98, 98);
-        line-height: 1.714;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: rgb(98, 98, 98);
+    line-height: 1.714;
 }
       
       
 .main {
     width: 80%;
     margin: 0 auto;
+    padding-top: 20px;
 }
 
 .footer {
