@@ -162,6 +162,9 @@ main {
       line-height: 1.625;
       margin-top: 10px;
   }
+  .column a:hover {
+      background-color: rgb(8, 122, 117);
+  }
 
  
 
