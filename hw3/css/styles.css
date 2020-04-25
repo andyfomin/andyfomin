@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100vw;
+    min-height: 100hw;
+}
+
+.shop {
+}
+.section {
+    position: relative;
+    width: 255px;
+    height: 280px;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 255px;
+    height: 280px;
+    background-color: rgba(0, 0, 0, 40%);
+}
+.button {
+    display: inline-block;
+    width: 30%;
+
+}
+.item:hover > .submenu {
+    display: block;
+}
