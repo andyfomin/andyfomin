@@ -18,7 +18,7 @@ img {
 .section {
     position: relative;
     width: 255px;
-    height: 280px;
+    height: 318px;
 }
 .submenu {
     display: none;
@@ -26,7 +26,7 @@ img {
     top: 0;
     left: 0;
     width: 255px;
-    height: 280px;
+    height: 318px;
     background-color: rgba(0, 0, 0, 40%);
 }
 .item:hover > .submenu {
