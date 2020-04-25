@@ -11,8 +11,10 @@ body {
     min-height: 100hw;
 }
 
-.shop {
+img {
+    width: 100%;
 }
+
 .section {
     position: relative;
     width: 255px;
