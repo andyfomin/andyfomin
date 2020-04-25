@@ -8,7 +8,7 @@
 
 body {
     width: 100vw;
-    min-height: 100hw;
+    min-height: 100vh;
 }
 
 img {
@@ -28,11 +28,6 @@ img {
     width: 255px;
     height: 280px;
     background-color: rgba(0, 0, 0, 40%);
-}
-.button {
-    display: inline-block;
-    width: 30%;
-
 }
 .item:hover > .submenu {
     display: block;
