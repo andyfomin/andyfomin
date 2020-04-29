@@ -191,6 +191,7 @@ main {
   }
   
   .menu-item {
+      display: none;
       position: absolute;
       top: 0;
       left: 0;
@@ -207,4 +208,7 @@ main {
       background-color:  rgba(122, 196, 178, 0%);
       text-decoration: none;
       border: solid 1px #ffffff;
+  }
+  .section:hover > .menu-item {
+      display: block;
   }
