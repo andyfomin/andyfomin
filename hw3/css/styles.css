@@ -11,24 +11,34 @@ body {
     min-height: 100vh;
 }
 
-img {
-    width: 100%;
+.header {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto
 }
 
-.section {
-    position: relative;
-    width: 255px;
-    height: 318px;
+.menu {
 }
-.submenu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 255px;
-    height: 318px;
-    background-color: rgba(0, 0, 0, 40%);
+.menu li {
+    display: inline-block;
+    margin: 0 20px 0 20px;
 }
-.item:hover > .submenu {
-    display: block;
+.menu li:last-child {
+    margin-right: 0;
 }
+.menu a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: black;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 5px 0 10px 0;
+}
+.menu a:hover {
+    color: #1abc9c;
+}
+
+
+  
