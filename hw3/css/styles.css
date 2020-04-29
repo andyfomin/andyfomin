@@ -55,7 +55,7 @@ main {
 
 .container img {
     width: 100%;
-    object-fit: cover;
+    
 }
 
 .btn-left {
@@ -118,5 +118,66 @@ main {
     font-weight: 100;
 }
  
+.shop {
+    width: 70%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin: 0 auto;
+  }
+  
+  .section {
+      width: 20%;
+      margin-top: 25px;
+      cursor: pointer;
+      
+  }
+  .section img {
+      width: 100%;
+  }
 
+
+
+  .list {
+      width: 100%;
+      display: inline-block;
+      margin-top: -4px;
+  }
+  .name {
+      display: inline-block;
+      width: 80%;
+      background-color: #323232;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: left;
+  }
+  .name:hover {
+      background-color: #1abc9c;
+  }
+      
+  .price {
+    display: inline-block;
+    width: 20%;
+    background-color: #8c8c8c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -4px;
+    margin-left: -px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .price:hover {
+      background-color: rgb(35, 221, 150);
+  }
   
