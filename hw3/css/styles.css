@@ -17,28 +17,30 @@ body {
 
 .header {
     width: 70%;
+    height: 21px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto
 }
 
 .menu {
+    display: flex;
 }
 .menu li {
-    display: inline-block;
+    display: flex;
     margin: 0 20px 0 20px;
 }
 .menu li:last-child {
     margin-right: 0;
 }
 .menu a {
-    display: inline-block;
+    display: flex;
     text-transform: uppercase;
     color: black;
     font-size: 14px;
     font-family: sans-serif;
     font-weight: bold;
-    padding: 5px 0 10px 0;
+    align-items: center;
 }
 .menu a:hover {
     color: #1abc9c;
@@ -47,23 +49,29 @@ body {
 main {
     position: relative;
     background-color: rgb(233, 240, 253);
+    margin-top: 30px;
+}
+
+.slider {
+    position: relative;
 }
 
 .container {
     position: relative;
     width: 100%;
-    margin-top: 30px;
 }
 
 .container img {
+    display: flex;
     width: 100%;
     
 }
 
 .btn-left {
     position: absolute;
-    top: 38%;
-    left: 15%;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
     text-decoration: none;
     border: none;
     background-color: rgba(122, 196, 178, 50%);
@@ -80,8 +88,9 @@ main {
 
 .btn-right {
     position: absolute;
-    top: 37%;
-    right: 15%;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
     text-decoration: none;
     border: none;
     background-color: rgba(122, 196, 178, 50%);
@@ -136,13 +145,16 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
+    margin-top: 55px;
+    padding-bottom: 70px;
   }
   
   .section {
+      display: flex;
+      flex-wrap: wrap;
       position: relative;
       width: 22%;
-      margin-top: 55px;
-
+      margin-bottom: 20px;
   }
   .section img {
       width: 100%;
@@ -150,15 +162,14 @@ main {
 
   .list {
       width: 100%;
-      display: inline-block;
-      margin-top: -4px;
+      height: 30px;
+      display: flex;
   }
   .name {
-      display: inline-block;
+      display: flex;
+      align-items: center;
       width: 80%;
       background-color: #323232;
-      padding-top: 10px;
-      padding-bottom: 10px;
       padding-left: 10px;
       color: #ffffff;
       text-transform: uppercase;
@@ -172,19 +183,16 @@ main {
   }
       
   .price {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 20%;
     background-color: #8c8c8c;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: -4px;
-    margin-left: -px;
     color: #ffffff;
     text-transform: uppercase;
     font-family: sans-serif;
     font-size: 14px;
     font-weight: bold;
-    text-align: center;
   }
   .price:hover {
       background-color: rgb(35, 221, 150);
@@ -197,18 +205,83 @@ main {
       left: 0;
       background-color: rgba(115, 115, 115, 80%);
       width: 100%;
-      height: 88.3%;
+      height: 88%;
       border: solid 7px rgb(255, 255, 255);
   }
 
-  .btn1 {
-      width: 50px;
-      height: 50px;
-      font-size: 35px;
-      background-color:  rgba(122, 196, 178, 0%);
-      text-decoration: none;
-      border: solid 1px #ffffff;
+  .btn {
+      position: absolute;               
+      top: 50%;
+      left: 50%;                         
+      transform: translate(-50%, -50%)
   }
+
+  .btn1, .btn2, .btn3 {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      background-color:  rgba(122, 196, 178, 0%);
+      color: #ffffff;
+      font-weight: 100;
+      text-decoration: none;
+      border: solid 2px #ffffff;
+  }
+
+  .btn4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 128px;
+    height: 40px;
+    font-size: 20px;
+    background-color:  rgba(122, 196, 178, 0%);
+    color: #ffffff;
+    font-weight: 100;
+    text-decoration: none;
+    border: solid 2px #ffffff;
+    margin-top: 3px;
+  }
+
+  .btn1:hover {
+    background-color: rgba(122, 196, 178, 50%);
+    border: none;
+ }
+  .btn2:hover {
+    background-color: rgba(122, 196, 178, 50%);
+    border: none;
+ }
+  .btn3:hover {
+    background-color: rgba(122, 196, 178, 50%);
+    border: none;
+ }
+ .btn4:hover {
+     background-color: rgba(122, 196, 178, 50%);
+     border: solid 2px rgba(122, 196, 178, 50%);
+  }
+
   .section:hover > .menu-item {
       display: block;
+      text-align: center;
+  }
+
+  .btn4 span {
+      font-size: 12px;
+      text-transform: uppercase;;
+  }
+  .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 70px;
+      background-color: #323232;
+
+  }
+  .end {
+      color: #ffffff;
+      font-family: sans-serif;
+      font-size: 12px;
+  }
+  .end span {
+      color: #43ac99;
   }
