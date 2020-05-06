@@ -5,16 +5,18 @@
 }
 
 body {
-  width: 100vw;
+  width: 1280px;
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   background-color: #f5f7fa;
   padding: 20px;
+  margin: 0 auto;
 }
 
 .wrapper {
   background-color: #ffffff;
   display: flex;
+  width: 1200px;
 }
 
 .sidebar {
@@ -53,6 +55,7 @@ body {
 }
 
 .my-conteiner {
+  width: 570px;
   padding: 110px 0 110px 90px;
 }
 
@@ -88,6 +91,11 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.project span {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .project a {
