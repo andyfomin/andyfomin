@@ -5,18 +5,17 @@
 }
 
 body {
+  margin: 0 auto;
   width: 1280px;
-  min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   background-color: #f5f7fa;
   padding: 20px;
-  margin: 0 auto;
 }
 
 .wrapper {
+  width: 1200px;
   background-color: #ffffff;
   display: flex;
-  width: 1200px;
 }
 
 .sidebar {
