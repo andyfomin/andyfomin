@@ -53,6 +53,7 @@ body {
   text-align: center;
   padding: 8px;
   border-bottom-right-radius: 25px;
+  z-index: 1;
 }
 
 .event-two {
@@ -67,19 +68,23 @@ body {
   text-align: center;
   padding: 8px;
   border-bottom-right-radius: 25px;
+  z-index: 1;
 }
 
 .img-container {
-  padding: 20px;
-  display: flex;
-  width: 300px;
-  height: 250px;
-  margin-bottom: 8%;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 85%;
+  position: relative;
 }
 
 .image {
-  width: 100%;
   object-fit: contain;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 96%;
+  height: 96%;
 }
 
 .section {
