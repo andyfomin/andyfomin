@@ -5,27 +5,22 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
 .wrapper {
-  width: 100vw;
-  min-height: 100vh;
+  width: 100%;
 }
 
 .blocks {
   max-width: 1300px;
   display: grid;
-  justify-items: space-between;
   grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
   grid-column-gap: 10px;
-  margin: auto;
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .block {
