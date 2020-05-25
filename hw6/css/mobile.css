@@ -1,0 +1,20 @@
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  background: url(../img/bg.png) top center no-repeat;
+}
+
+.header {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.logo-link {
+  width: 180px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+}
