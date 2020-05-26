@@ -1,5 +1,6 @@
 @import "mobile.css";
 @import "tablet.css";
+@import "desktop.css";
 
 * {
   box-sizing: border-box;

@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
   .header {
-    height: 700px;
+    min-height: 700px;
   }
 
   .header-wrap {
@@ -63,5 +63,21 @@
 
   .button-bottom {
     margin-top: 40px;
+  }
+
+  .main-item:nth-child(1) {
+    order: 1;
+  }
+
+  .main-item:nth-child(2) {
+    order: 3;
+  }
+
+  .main-item:nth-child(3) {
+    order: 2;
+  }
+
+  .main-item:nth-child(4) {
+    order: 4;
   }
 }

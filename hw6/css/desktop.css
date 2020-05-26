@@ -1,0 +1,14 @@
+@media (min-width: 960px) {
+  .header-wrap {
+    width: 940px;
+    padding-top: 30px;
+  }
+
+  .main-wrap {
+    width: 940px;
+  }
+
+  .main-item {
+    width: 22%;
+  }
+}
