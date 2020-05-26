@@ -22,7 +22,7 @@
 .header-wrap {
   position: relative;
   width: 320px;
-  height: 550px;
+  min-height: 550px;
   margin: 0 auto;
   padding-top: 20px;
 }
