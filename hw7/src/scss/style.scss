@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  background-image: url(../img/bcg.png);
+  padding-top: 25px;
+}
+
+.header {
+  width: 80%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    display: block;
+
+    & img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .menu {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu-item {
+    }
+  }
+}
