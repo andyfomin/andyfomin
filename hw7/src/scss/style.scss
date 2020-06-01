@@ -1,63 +1,289 @@
+$primasi-font-stack: "Monserrat", sans-serif;
+$title-font: "Montserrat", sans-serif;
+$link-font: "Montserrat", sans-serif;
+$text-font: "Roboto";
+$ks-font: "Kaushan Script";
+$primasi-dark-color: #333333;
+$primasi-light-color: #ffffff;
+$menu-link-color: #fce38a;
+$green-color: #95e1d3;
+$pink-color: #f38181;
+$gradient-pink-color: rgba(243, 149, 149, 80%);
+$gradient-yelou-color: rgba(252, 227, 138, 80%);
+$grey-color: rgb(153, 153, 153);
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  list-style: none;
   text-decoration: none;
+  list-style: none;
 }
 
 body {
   width: 100vw;
   min-height: 100vh;
-  background-image: url(../img/bcg.png);
 }
 
 .wrapper {
-  width: 88%;
-  padding-top: 25px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .header {
-  width: 100%;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 1000px;
+  background: url(../img/bcg.png) top center no-repeat;
+  padding-top: 30px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  background: url(../img/bcg@2x.png) top center no-repeat;
+}
+
+.must-head {
+  width: 88%;
+  display: flex;
   justify-content: space-between;
 
-  .logo {
-    & img {
-      display: block;
-      width: 100%;
-    }
+  &__menu {
+    display: flex;
+    width: 45%;
   }
 
-  .menu-wrap {
-    width: 40%;
+  &__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .menu {
+  &__link {
+    font-size: 14px;
+    font-family: $link-font;
+    color: $primasi-light-color;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+.link {
+  &:hover {
+    color: $menu-link-color;
+  }
+
+  &__svg {
+    fill: $primasi-light-color;
+
+    &:hover {
+      fill: $menu-link-color;
+    }
+  }
+}
+
+.head-section {
+  margin-top: 160px;
+  text-align: center;
+  width: 820px;
+
+  .section-item {
+    color: $primasi-light-color;
+  }
+
+  &__name {
+    font-family: $ks-font;
+    font-size: 72px;
+  }
+
+  &__title {
+    font-size: 150px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $title-font;
+  }
+
+  &__button {
+    font-size: 14px;
+    font-family: $primasi-font-stack;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    border: 3px solid $primasi-light-color;
+    list-style: none;
+    background-color: transparent;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-top: 120px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.main-wrap {
+  position: relative;
+  width: 88%;
+  text-align: center;
+  padding-top: 40px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: $pink-color;
+    width: 60px;
+    height: 5px;
+    left: 50%;
+    top: 180px;
+    transform: translate(-50%);
+  }
+
+  &__name {
+    font-family: $ks-font;
+    font-size: 24px;
+    color: $primasi-dark-color;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-family: $title-font;
+    color: $primasi-dark-color;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+}
+
+.service-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 110px;
+
+  .service-container {
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+    margin-bottom: 100px;
+
+    &__icon {
       display: flex;
+      width: 20%;
+      align-items: flex-start;
+    }
 
-      justify-content: space-between;
-      align-items: center;
+    &__items {
+      display: flex;
+      width: 80%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
 
-      .menu-item {
+    &__title {
+      font-size: 14px;
+      font-family: $title-font;
+      color: $primasi-dark-color;
+      text-transform: uppercase;
+    }
+
+    &__description {
+      font-size: 15px;
+      font-family: $text-font;
+      text-align: left;
+      color: rgb(153, 153, 153);
+      margin-top: 20px;
+    }
+  }
+}
+
+.description {
+  font-size: 15px;
+  font-family: $text-font;
+  color: rgb(153, 153, 153);
+  margin-top: 110px;
+  line-height: 1.6;
+}
+
+.team-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+
+  .team-container {
+    position: relative;
+    width: 30%;
+    margin-top: 100px;
+
+    &:hover {
+      .link__hover-menu {
         display: flex;
-        font-size: 14px;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 700;
-        color: #ffffff;
+      }
+
+      .link__img {
+        transform: translate(-10px, -10px);
+      }
+    }
+
+    &__info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+
+      .name {
+        font-size: 15px;
+        font-family: $title-font;
+        color: $primasi-dark-color;
         text-transform: uppercase;
+      }
 
-        & a {
-          color: #ffffff;
-          border-bottom: solid 2px transparent;
+      .profession {
+        font-size: 16px;
+        font-family: $text-font;
+        color: rgb(153, 153, 153);
+        margin-top: 20px;
+        text-transform: capitalize;
+      }
+    }
 
-          &:hover {
-            color: #fce38a;
-            border-bottom: solid 2px #fce38a;
-          }
-        }
+    .link {
+      position: relative;
+      display: flex;
+      width: 100%;
+      background-color: $green-color;
+
+      &__img {
+        display: block;
+        width: 100%;
+      }
+
+      &__hover-menu {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-10px, -10px);
+        display: none;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          rgba(243, 149, 149, 80%),
+          rgba(252, 227, 138, 80%)
+        );
+      }
+
+      &__button {
+        width: 50px;
+        height: 50px;
+        background-color: $menu-link-color;
+        border: solid 1px $pink-color;
+        color: $pink-color;
+        font-size: 27px;
       }
     }
   }
