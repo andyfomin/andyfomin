@@ -157,19 +157,19 @@ body {
   }
 }
 
-.service {
+.services {
   @extend flex-between;
   flex-wrap: wrap;
   margin-top: 110px;
 }
 
-.service__container {
+.service {
   @extend flex-between;
   width: 33%;
   margin-bottom: 100px;
 }
 
-.service__icon {
+.service__icon-wrap {
   display: flex;
   width: 20%;
   align-items: flex-start;
@@ -205,11 +205,11 @@ body {
   line-height: 1.6;
 }
 
-.team {
+.team-list {
   @extend flex-between;
   margin-top: 90px;
 
-  .team__container {
+  &__item-team {
     position: relative;
     width: 30%;
     margin-top: 100px;
@@ -224,7 +224,7 @@ body {
       }
     }
 
-    .team__info {
+    .team-list__info {
       width: 100%;
       @extend flex-between;
       margin-top: 30px;
@@ -271,6 +271,9 @@ body {
       }
 
       &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 50px;
         height: 50px;
         background-color: $menu-link-color;
@@ -309,7 +312,7 @@ body {
       font-weight: bold;
     }
 
-    .form {
+    .form-wrap {
       display: flex;
       width: 380px;
       min-height: 40px;

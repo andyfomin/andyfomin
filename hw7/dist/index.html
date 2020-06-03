@@ -65,13 +65,13 @@
       </header>
 
       <main class="main">
-        <div class="section">
+        <section class="section">
           <span class="section__name">We work with</span>
           <h2 class="section__title">amazing services</h2>
 
-          <div class="service">
-            <div class="service__container">
-              <div class="service__icon">
+          <div class="services">
+            <div class="service">
+              <div class="service__icon-wrap">
                 <img class="icon" src="img/alarm.svg" alt="alarm" />
               </div>
               <div class="service__text">
@@ -83,9 +83,9 @@
               </div>
             </div>
 
-            <div class="service__container">
-              <div class="service-container__icon">
-                <img class="icon-img" src="img/alarm.svg" alt="alarm" />
+            <div class="service">
+              <div class="service__icon-wrap">
+                <img class="icon" src="img/alarm.svg" alt="alarm" />
               </div>
               <div class="service__text">
                 <h6 class="service__title">photographi</h6>
@@ -96,9 +96,9 @@
               </div>
             </div>
 
-            <div class="service__container">
-              <div class="service__icon">
-                <img class="img" src="img/alarm.svg" alt="alarm" />
+            <div class="service">
+              <div class="service__icon-wrap">
+                <img class="icon" src="img/alarm.svg" alt="alarm" />
               </div>
               <div class="service__text">
                 <h6 class="service__title">photographi</h6>
@@ -109,9 +109,9 @@
               </div>
             </div>
 
-            <div class="service__container">
-              <div class="service__icon">
-                <img class="icon-img" src="img/alarm.svg" alt="alarm" />
+            <div class="service">
+              <div class="service__icon-wrap">
+                <img class="icon" src="img/alarm.svg" alt="alarm" />
               </div>
               <div class="service__text">
                 <h6 class="service__title">photographi</h6>
@@ -122,9 +122,9 @@
               </div>
             </div>
 
-            <div class="service__container">
-              <div class="service__icon">
-                <img class="icon-img" src="img/alarm.svg" alt="alarm" />
+            <div class="service">
+              <div class="service__icon-wrap">
+                <img class="icon" src="img/alarm.svg" alt="alarm" />
               </div>
               <div class="service__text">
                 <h6 class="service__title">photographi</h6>
@@ -135,9 +135,9 @@
               </div>
             </div>
 
-            <div class="service__container">
-              <div class="service__icon">
-                <img class="icon-img" src="img/alarm.svg" alt="alarm" />
+            <div class="service">
+              <div class="service__icon-wrap">
+                <img class="icon" src="img/alarm.svg" alt="alarm" />
               </div>
               <div class="service__text">
                 <h6 class="service__title">photographi</h6>
@@ -148,9 +148,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="section">
+        <section class="section">
           <span class="section__name">Who we are</span>
           <h2 class="section__title">meet our team</h2>
           <p class="section__description">
@@ -160,8 +160,8 @@
             optio harum molestiae fuga quis possimus?
           </p>
 
-          <div class="team">
-            <div class="team__container">
+          <div class="team-list">
+            <div class="team-list__item-team">
               <a class="link" href="#">
                 <img
                   class="link__img"
@@ -169,6 +169,7 @@
                   srcset="img/1.png 380w, img/1@2x.png 760w"
                   alt=""
                 />
+
                 <div class="link__hover-menu">
                   <button class="link__button">
                     <i class="fab fa-facebook-f"></i>
@@ -184,13 +185,13 @@
                   </button>
                 </div>
               </a>
-              <div class="team__info">
+              <div class="team-list__info">
                 <span class="name">matthew dix</span>
                 <span class="profession">graphic design</span>
               </div>
             </div>
 
-            <div class="team__container">
+            <div class="team-list__item-team">
               <a class="link" href="#">
                 <img
                   class="link__img"
@@ -213,13 +214,13 @@
                   </button>
                 </div>
               </a>
-              <div class="team__info">
+              <div class="team-list__info">
                 <span class="name">matthew dix</span>
                 <span class="profession">graphic design</span>
               </div>
             </div>
 
-            <div class="team__container">
+            <div class="team-list__item-team">
               <a class="link" href="#">
                 <img
                   class="link__img"
@@ -242,25 +243,31 @@
                   </button>
                 </div>
               </a>
-              <div class="team__info">
+              <div class="team-list__info">
                 <span class="name">matthew dix</span>
                 <span class="profession">graphic design</span>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__wrap">
-          <div class="footer__section">
+          <section class="footer__section">
             <span class="footer__text">
               © 2016 MoGo free PSD template by
             </span>
             <a class="footer__link" href="#">Laaqiq</a>
-          </div>
-          <form class="form" action="#">
-            <input class="form__input" type="email" placeholder="Your Email" />
-            <button class="form__button" type="submit">suescribe</button>
+          </section>
+          <form action="#">
+            <div class="form-wrap">
+              <input
+                class="form-wrap__input"
+                type="email"
+                placeholder="Your Email"
+              />
+              <button class="form-wrap__button" type="submit">suescribe</button>
+            </div>
           </form>
         </div>
       </footer>
