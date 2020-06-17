@@ -8,20 +8,31 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!--main container-->
     <div class="wrapper">
       <aside class="sidebar">
-        <img class="my-photo" src="images/me.jpg" alt="my photo" />
+        <div class="photo-container">
+          <img class="my-photo" src="images/me.png" alt="my photo" />
+        </div>
 
         <!--contacts container-->
         <div class="contacts-container">
           <h3>Contacts</h3>
           <div>
             <span class="contacts-link-type">C:</span
-            ><a href="tel:+380951138598">+38 095 113 85 98</a>
+            ><a href="tel:+380939853381">+38 093 983 33 81</a>
           </div>
           <div>
             <span class="contacts-link-type">E:</span
@@ -34,23 +45,20 @@
           <h3>Tech Skills</h3>
           <ul>
             <li><span>HTML5</span></li>
+            <li><span>Pug</span></li>
             <li><span>CSS3</span></li>
-            <li><span>GIT</span></li>
-            <li><span>WebPack</span></li>
-            <li><span>JavaScript</span></li>
-            <li><span>React.js</span></li>
-            <li><span>Node.js</span></li>
+            <li><span>SASS/SCSS</span></li>
+            <li><span>Stylus</span></li>
           </ul>
         </div>
 
-        <!--Soft Skills-->
         <div class="skills">
-          <h3>Soft Skills</h3>
+          <h3>Development Tools</h3>
           <ul>
-            <li><span>Scrum</span></li>
-            <li><span>Agile</span></li>
-            <li><span>GTD</span></li>
-            <li><span>Teamwork</span></li>
+            <li><span>Gulp</span></li>
+            <li><span>Git</span></li>
+            <li><span>npm</span></li>
+            <li><span>Photoshop</span></li>
           </ul>
         </div>
       </aside>
@@ -59,39 +67,9 @@
       <div class="my-conteiner">
         <!--about me main info-->
         <div class="main-info">
-          <h2 class="main-info-title">Front-End Developer</h2>
-          <h1 class="my-name">Andrii Fomin</h1>
-          <p class="info">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-            accumsan lacus vel facilisis.
-          </p>
-        </div>
-
-        <!--projects container-->
-        <div class="projects-container">
-          <h3 class="projects-title">Projects</h3>
-          <ol class="projects">
-            <li class="project">
-              <a href="https://lovecamp.allinsol.com/"
-                >https://lovecamp.allinsol.com/</a
-              >
-              <span>[ HTML5, CSS3 ]</span>
-            </li>
-            <li class="project">
-              <a href="https://cryptohub.goit.ua/"
-                >https://cryptohub.goit.ua/</a
-              >
-              <span>[ JavaScript ]</span>
-            </li>
-            <li class="project">
-              <a href="https://kidslike.goit.co.ua/"
-                >https://kidslike.goit.co.ua/</a
-              >
-              <span>[ React.js, Node.js ]</span>
-            </li>
-          </ol>
+          <h2 class="main-info-title">Web Developer</h2>
+          <h1 class="my-name">Андрей Фомин</h1>
+          <p class="info"></p>
         </div>
 
         <!--work experiense-->
@@ -100,90 +78,39 @@
 
           <!--company1-->
           <div class="company">
-            <h4 class="company-title">
-              Front-End Developer <span>Freelance</span>
-            </h4>
+            <h4 class="company-title">Web Developer <span>Freelance</span></h4>
             <span class="date"
-              >September 2019 - up to now
+              >February 2020 - up to now
               <span class="line">|</span> Ukraine</span
             >
-            <ul class="list">
-              <li class="company-article">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </li>
-              <li class="company-article">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </li>
-              <li class="company-article">
-                Risus commodo viverra maecenas.
-              </li>
-              <li class="company-article">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod.
-              </li>
-            </ul>
-          </div>
+            </div>
+            
+            <div class="slider-wrap">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="https://cdn.pinkvilla.com/files/styles/gallery-section/public/mouni_roys_these_stunning_photos_will_leave_you_spellbound_check_it_out_1.jpg?itok=A1VthY-B"
+                      class="d-block w-100 img-sld" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://cdn.pinkvilla.com/files/styles/gallery-section/public/mouni_roys_these_stunning_photos_will_leave_you_spellbound_check_it_out.jpg?itok=h_J5SVj3"
+                      class="d-block w-100 img-sld" alt="...">
+                  </div>
+            
+                </div>
+                <a class="carousel-control-prev black" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon black" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next black" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon black" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
 
-          <!--company2-->
-          <div class="company">
-            <h4 class="company-title">
-              Manager <span>Roga & Kopyta New</span>
-            </h4>
-            <span class="date"
-              >March 2015 - October 2018
-              <span class="line">|</span> Ukraine</span
-            >
-            <ul class="list">
-              <li class="company-article">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod labore et dolore magna aliqua.
-              </li>
-              <li class="company-article">
-                Quis ipsum suspendisse ultrices gravida.
-              </li>
-              <li class="company-article">
-                Risus commodo viverra maecenas.
-              </li>
-            </ul>
-          </div>
-
-          <!--company3-->
-          <div class="company">
-            <h4 class="company-title">
-              Manager <span>Roga & Kopyta LLC</span>
-            </h4>
-            <span class="date"
-              >June 2014 - February 2015
-              <span class="line">|</span> Ukraine</span
-            >
-            <ul class="list">
-              <li class="company-article">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </li>
-              <li class="company-article">
-                Quis ipsum suspendisse ultrices gravida.
-              </li>
-              <li class="company-article">
-                Risus commodo viverra maecenas.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!--Education-->
-        <div class="education-container">
-          <h3 class="education-title">Education</h3>
-          <p class="education-name">
-            Kharkiv National University of Radioelectronics
-          </p>
-          <p class="specialty-name">Management</p>
-          <span class="date"
-            >Septermber 2009 - June 2014
-            <span class="line">|</span> Ukraine</span
-          >
-        </div>
-      </div>
     </div>
   </body>
 </html>

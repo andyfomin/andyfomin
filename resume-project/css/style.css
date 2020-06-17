@@ -5,15 +5,16 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+  min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   background-color: #f5f7fa;
-  padding: 20px;
 }
 
 .wrapper {
-  width: 1200px;
+  width: 80%;
   background-color: #ffffff;
   display: flex;
 }
@@ -49,8 +50,31 @@ body {
   color: #ffffff;
 }
 
-.my-photo {
+.slider-wrap {
+  margin-top: 30px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23222' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23222' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   width: 370px;
+  min-height: 200px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.my-photo {
+  display: block;
+  width: 60%;
 }
 
 .my-conteiner {
@@ -59,7 +83,7 @@ body {
 }
 
 .main-info-title {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
 }
 
