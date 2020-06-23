@@ -24,12 +24,12 @@ let login = prompt("Введите логин");
 const adminLogin = "admin";
 const adminPassword = "qwerty";
 
-if (login === null) {
+if (!login) {
   alert("Отменено пользователем!");
 } else if (login === adminLogin) {
   let password = prompt("Введите пароль");
 
-  if (password === null) {
+  if (!password) {
     alert("Отменено пользователем!");
   } else if (password === adminPassword) {
     alert("Добро пожаловать!");
