@@ -23,55 +23,28 @@ const ADMIN_PASSWORD = 'qwerty';*/
 let login = prompt("Введите логин");
 let adminLogin = ["admin", "login"];
 let adminPassword = ["qwerty", "aaaa"];
-if (!login) {
-  alert("Отменено пользователем!");
-} else if (login === adminLogin[0]) {
-  let password = prompt("Введите пароль");
+let password = prompt("Введите пароль");
 
-  if (!password) {
-    alert("Отменено пользователем!");
-  } else if (password === adminPassword[0]) {
-    alert("Добро пожаловать!");
-  } else {
-    alert("Доступ запрещен!");
-  }
-} else if (login === adminLogin[1]) {
-  let password = prompt("Введите пароль");
-
-  if (!password) {
-    alert("Отменено пользователем!");
-  } else if (password === adminPassword[1]) {
-    alert("Добро пожаловать!");
-  } else {
-    alert("Доступ запрещен!");
-  }
+if (login === adminLogin[0]) {
+  password;
 } else {
-  alert("Доступ запрещен!");
+  switch (login) {
+    case null:
+      alert("Отменено пользователем!");
+      break;
+    default:
+      alert("Доступ запрещен!");
+  }
 }
 
-// let login = prompt("Введите логин");
-// let adminLogin = ["admin", "login"];
-// let adminPassword = ["qwerty", "aaaa"];
-// let password = prompt("Введите пароль");
-
-// switch (login) {
-//   case null:
-//     alert("Отменено пользователем!");
-//     break;
-//   case adminLogin[0]:
-//     password;
-//     break;
-//   default:
-//     alert("Доступ запрещен!");
-// }
-
-// switch (password) {
-//   case null:
-//     alert("Отменено пользователем!");
-//     break;
-//   case adminPassword[0]:
-//     alert("Добро пожаловать!");
-//     break;
-//   default:
-//     alert("Доступ запрещен!");
-// }
+if (password === adminPassword[0]) {
+  alert("Добро пожаловать!");
+} else {
+  switch (password) {
+    case null:
+      alert("Отменено пользователем!");
+      break;
+    default:
+      alert("Доступ запрещен!");
+  }
+}
