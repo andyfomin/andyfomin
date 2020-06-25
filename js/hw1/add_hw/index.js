@@ -33,27 +33,30 @@ let isNanUserResponse = isNaN(quantityPlaces);
 
 console.log(isNanUserResponse);
 
-if (isNanUserResponse) {
-  alert("Ошибка ввода");
-}
-if (quantityPlaces > taba && quantityPlaces <= sharm) {
-  group = "Sharm";
-} else if (quantityPlaces <= taba) {
-  group = "Taba";
-}
+switch (isNanUserResponse) {
+  case true:
+    alert("Ошибка ввода");
+    break;
+  case false:
+    if (quantityPlaces > taba && quantityPlaces <= sharm) {
+      group = "Sharm";
+    } else if (quantityPlaces <= taba) {
+      group = "Taba";
+    }
 
-if (quantityPlaces > sharm && quantityPlaces <= hurgada) {
-  group = "Hurgada";
-}
+    if (quantityPlaces > sharm && quantityPlaces <= hurgada) {
+      group = "Hurgada";
+    }
 
-if (quantityPlaces <= hurgada) {
-  answer = confirm(`"Eсть место в группе " ${group}". Вы согласни?"`);
-}
+    if (quantityPlaces <= hurgada) {
+      answer = confirm(`"Eсть место в группе " ${group}". Вы согласни?"`);
+    }
 
-if (quantityPlaces > hurgada) {
-  alert("Извините, столько мест нет.");
-} else if (answer) {
-  alert(`'Приятного путешествия в группе' ${group}!`);
-} else {
-  alert("Нам очень жаль, приходите еще!");
+    if (quantityPlaces > hurgada) {
+      alert("Извините, столько мест нет.");
+    } else if (answer) {
+      alert(`'Приятного путешествия в группе' ${group}!`);
+    } else {
+      alert("Нам очень жаль, приходите еще!");
+    }
 }
