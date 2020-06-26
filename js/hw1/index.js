@@ -23,25 +23,25 @@ const ADMIN_PASSWORD = 'qwerty';*/
 let login = prompt("Введите логин");
 let adminLogin = ["admin", "login"];
 let adminPassword = ["qwerty", "aaaa"];
-let password = prompt("Введите пароль");
+let password;
 
 if (login === adminLogin[0]) {
-  password;
-} else {
-  switch (login) {
-    case null:
-      alert("Отменено пользователем!");
-      break;
-    default:
-      alert("Доступ запрещен!");
-  }
-}
+  password = prompt("Введите пароль");
 
-if (password === adminPassword[0]) {
-  alert("Добро пожаловать!");
+  if (password === adminPassword[0]) {
+    alert("Добро пожаловать!");
+  } else {
+    switch (!password) {
+      case true:
+        alert("Отменено пользователем!");
+        break;
+      default:
+        alert("Доступ запрещен!");
+    }
+  }
 } else {
-  switch (password) {
-    case null:
+  switch (!login) {
+    case true:
       alert("Отменено пользователем!");
       break;
     default:
