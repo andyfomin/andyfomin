@@ -19,6 +19,7 @@
   PS: для удобства и чистоты кода сохраните в переменные сообщения отображаемые в alert
 const ADMIN_LOGIN = 'admin';
 const ADMIN_PASSWORD = 'qwerty';*/
+"use strict";
 
 let login = prompt("Введите логин");
 let adminLogin = ["admin", "login"];
@@ -48,3 +49,7 @@ if (login === adminLogin[0]) {
       alert("Доступ запрещен!");
   }
 }
+
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then((response) => response.json())
+  .then((json) => console.log(json.title));

@@ -34,20 +34,19 @@
 //   alert((answer = "Введите другое число!"));
 // }
 
-let login = prompt("Введите логин");
-const adminLogin = "admin";
-const adminPassword = "qwerty";
+// const number = [12, 33, 2, 45, 10, 99];
+const number = ["qwerty", "aaaa", "1111"];
 
-if (login === null) {
-  alert("Отменено пользователем!");
-} else if (login === adminLogin) {
-  let password = prompt("Введите пароль");
+const userInput = prompt("Давай число!");
+let hasNumber;
 
-  if (password === null) {
-    alert("Доступ запрещен!");
-  } else if (password === adminPassword) {
-    alert("Добро пожаловать!");
+for (let i = 0, max = number.length; i < max; i += 1) {
+  if (number[i] === userInput) {
+    hasNumber = true;
+    break;
   }
-} else {
-  alert("Доступ запрещен!");
+
+  hasNumber = false;
 }
+
+console.log(hasNumber);
