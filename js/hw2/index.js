@@ -26,7 +26,7 @@
 
 const passwords = ["aaaa", "qwerty", "asdf", "qqqq"];
 let attempts = 3;
-let userPassword;
+let userPassword = null;
 
 do {
   attempts -= 1;
@@ -35,13 +35,13 @@ do {
     if (passwords.includes(userPassword)) {
       alert("Добро пожаловать");
       break;
-    } else if (attempts === 0) {
+    } else if (!attempts) {
       alert("У вас закончились попытки, аккаунт заблокирован!");
     } else {
       alert(`Неверный пароль, у вас осталось ${attempts} попыток`);
     }
   }
-} while (attempts > 0 && userPassword);
+} while (attempts && !userPassword);
 
 /*
   Написать следующий скрипт:
