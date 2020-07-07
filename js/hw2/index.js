@@ -26,7 +26,7 @@
 
 const passwords = ["aaaa", "qwerty", "asdf", "qqqq"];
 let attempts = 3;
-let userPassword = null;
+let userPassword;
 
 do {
   attempts -= 1;
@@ -34,14 +34,18 @@ do {
   if (userPassword) {
     if (passwords.includes(userPassword)) {
       alert("Добро пожаловать");
+      arr();
       break;
     } else if (!attempts) {
       alert("У вас закончились попытки, аккаунт заблокирован!");
     } else {
       alert(`Неверный пароль, у вас осталось ${attempts} попыток`);
     }
+  } else {
+    alert("Отменено пользователем");
+    break;
   }
-} while (attempts && !userPassword);
+} while (attempts);
 
 /*
   Написать следующий скрипт:
@@ -63,30 +67,33 @@ do {
       'Было введено не число, попробуйте еще раз', при этом результат prompt записывать
       в массив чисел не нужно, после чего снова пользователю предлагается ввести число в prompt.
 */
-const numbers = [];
-let userInput;
-let sum = 0;
-let userNumber;
 
-do {
-  userInput = prompt(
-    "Введите число для масива чисел! Что бы завершить ввод нажмите ОТМЕНА"
-  );
-  userNumber = Number.parseInt(userInput);
-  console.log(userNumber);
+function arr() {
+  const numbers = [];
+  let userInput;
+  let sum = 0;
+  let userNumber;
 
-  if (!isNaN(userNumber)) {
-    numbers.push(userNumber);
-  } else if (!userInput) {
-    alert(`Считаем сумму: ${numbers.join("+")}`);
-  } else {
-    alert("Было введено не число, попробуйте еще раз");
+  do {
+    userInput = prompt(
+      "Введите число для масива чисел! Что бы завершить ввод нажмите ОТМЕНА"
+    );
+    userNumber = Number.parseInt(userInput);
+    console.log(userNumber);
+
+    if (!isNaN(userNumber)) {
+      numbers.push(userNumber);
+    } else if (!userInput) {
+      alert(`Считаем сумму: ${numbers.join("+")}`);
+    } else {
+      alert("Было введено не число, попробуйте еще раз");
+    }
+  } while (userInput);
+
+  for (const addition of numbers) {
+    sum += addition;
   }
-} while (userInput);
-
-for (const addition of numbers) {
-  sum += addition;
-}
-if (sum) {
-  alert(`Сумма ровна: ${sum}`);
+  if (sum) {
+    alert(`Сумма ровна: ${sum}`);
+  }
 }
