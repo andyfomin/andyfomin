@@ -1,5 +1,48 @@
 "use strict";
 
+/*Напишите скрипт авторизации пользователя.
+
+  Есть массив паролей зарегистрированных пользователей passwords.
+
+  При посещении страницы, необходимо попросить пользователя ввести свой пароль,
+  после чего проверить содержит ли массив passwords пароль введенный пользователем.
+
+  Пароль можно ввести не верно всего n раз, кол-во хранится в переменной attempts.
+  Подсказка: используйте цикл do...while.
+  Если был введен пароль который есть в массиве passwords, вывести alert
+  с текстом 'Добро пожаловать!' и прекратить спрашивать пароль в цикле.
+  Если был введен не существующий пароль, отнять от лимита попыток единицу,
+  вывести alert с текстом "Неверный пароль, у вас осталось n попыток",
+  где n это оставшийся лимит.
+
+  После того как пользователь закрыл alert, запросить пароль снова.
+  Продолжать запрашивать пароль до тех пор, пока пользователь не введет
+  существующий пароль, не кончатся попытки или пока пользователь
+  не нажмет Cancel в prompt.
+  Если закончились попытки, вывести alert с текстом "У вас закончились попытки, аккаунт заблокирован!"
+
+  Если пользователь нажмет Cancel, прекратить выполнение цикла.
+*/
+
+const passwords = ["aaaa", "qwerty", "asdf", "qqqq"];
+let attempts = 3;
+let userPassword;
+
+do {
+  attempts -= 1;
+  userPassword = prompt("Введите пароль!");
+  if (userPassword) {
+    if (passwords.includes(userPassword)) {
+      alert("Добро пожаловать");
+      break;
+    } else if (attempts === 0) {
+      alert("У вас закончились попытки, аккаунт заблокирован!");
+    } else {
+      alert(`Неверный пароль, у вас осталось ${attempts} попыток`);
+    }
+  }
+} while (attempts > 0 && userPassword);
+
 /*
   Написать следующий скрипт:
 
@@ -23,29 +66,27 @@
 const numbers = [];
 let userInput;
 let sum = 0;
-let userNumbers;
-let massege;
+let userNumber;
 
 do {
   userInput = prompt(
     "Введите число для масива чисел! Что бы завершить ввод нажмите ОТМЕНА"
   );
-  userNumbers = Number.parseInt(userInput);
-  console.log(userNumbers);
+  userNumber = Number.parseInt(userInput);
+  console.log(userNumber);
 
-  if (!isNaN(userNumbers)) {
-    numbers.push(userNumbers);
-  } else if (userInput === null) {
-    massege = numbers.join("+");
-    alert(`Считаем сумму: ${massege}`);
+  if (!isNaN(userNumber)) {
+    numbers.push(userNumber);
+  } else if (!userInput) {
+    alert(`Считаем сумму: ${numbers.join("+")}`);
   } else {
     alert("Было введено не число, попробуйте еще раз");
   }
-} while (userInput !== null);
+} while (userInput);
 
 for (const addition of numbers) {
   sum += addition;
 }
-if (sum > 0) {
+if (sum) {
   alert(`Сумма ровна: ${sum}`);
 }
