@@ -35,18 +35,30 @@
 // }
 
 // const number = [12, 33, 2, 45, 10, 99];
-const number = ["qwerty", "aaaa", "1111"];
+// const number = ["qwerty", "aaaa", "1111"];
 
-const userInput = prompt("Давай число!");
-let hasNumber;
+// const userInput = prompt("Давай число!");
+// let hasNumber;
 
-for (let i = 0, max = number.length; i < max; i += 1) {
-  if (number[i] === userInput) {
-    hasNumber = true;
-    break;
+// for (let i = 0, max = number.length; i < max; i += 1) {
+//   if (number[i] === userInput) {
+//     hasNumber = true;
+//     break;
+//   }
+
+//   hasNumber = false;
+// }
+
+// console.log(hasNumber);
+function leadToTheDegree(x, y) {
+  let res = 1;
+  for (let i = 0; i < y; i += 1) {
+    res = res * x;
   }
-
-  hasNumber = false;
+  console.log(res);
 }
 
-console.log(hasNumber);
+let number = prompt("давай число");
+let degree = prompt("давай степінь");
+
+leadToTheDegree(number, degree);
