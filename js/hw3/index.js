@@ -45,7 +45,7 @@
         возвращая указанные строки. Больше ничего не делает.
 */
 
-const loginsList = ["aaaa", ["ssss"], ["vasyl"]];
+const loginsList = ["aaaa", "ssss", "vasyl"];
 const input = prompt("Введите логин!");
 
 function checkLoginValidity(login) {
