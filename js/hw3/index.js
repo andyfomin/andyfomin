@@ -71,7 +71,7 @@ function addLogin(logins, login) {
       return alert("Логин успешно добавлен!");
     }
   }
-  return alert("Ошибка! Логин должен быть от 4 до 16 символов");
+  return alert("Ошибка! Логин должен быть от 4 до 16 символов!");
 }
 
 addLogin(loginsList, input);
