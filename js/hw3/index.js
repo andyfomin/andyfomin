@@ -49,17 +49,11 @@ const loginsList = ["aaaa", "ssss", "vasyl"];
 const input = prompt("Введите логин!");
 
 function checkLoginValidity(login) {
-  if (login.length >= 4 && login.length <= 16) {
-    return true;
-  }
-  return false;
+  return login.length >= 4 && login.length <= 16;
 }
 
 function checkIfLoginExists(logins, login) {
-  if (logins.includes(login)) {
-    return true;
-  }
-  return false;
+  return logins.includes(login);
 }
 
 function addLogin(logins, login) {
