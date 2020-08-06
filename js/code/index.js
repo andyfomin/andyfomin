@@ -50,15 +50,57 @@
 // }
 
 // console.log(hasNumber);
-function leadToTheDegree(x, y) {
-  let res = 1;
-  for (let i = 0; i < y; i += 1) {
-    res = res * x;
-  }
-  console.log(res);
+// function leadToTheDegree(x, y) {
+//   let res = 1;
+//   for (let i = 0; i < y; i += 1) {
+//     res = res * x;
+//   }
+//   console.log(res);
+// }
+
+// let number = prompt("давай число");
+// let degree = prompt("давай степінь");
+
+// leadToTheDegree(number, degree);
+
+// const arr1 = [1, 2, 3, [4, 5, [6, 7]], 8];
+// const arr2 = [9, 10];
+
+// const flatten = function self(arr1) {
+//   let newArr = [];
+
+//   for (let elem of arr1) {
+//     const isArray = Array.isArray(elem);
+
+//     if (isArray) {
+//       newArr = newArr.concat(self(elem));
+//     } else {
+//       newArr.push(elem);
+//     }
+//   }
+//   return newArr;
+// };
+
+// let newArr = flatten(arr1).concat(arr2);
+// console.log(newArr);
+
+// const logins = {
+//   andy: "aaaa",
+//   vasyl: "qwerty",
+// };
+
+// const inputLogin = prompt();
+// const inputPass = prompt();
+
+// logins[inputLogin] = inputPass;
+
+// console.log(logins);
+
+function User(name, age, isActive) {
+  this.name = name;
+  this.age = age;
+  this.isActive = isActive;
 }
 
-let number = prompt("давай число");
-let degree = prompt("давай степінь");
-
-leadToTheDegree(number, degree);
+const mango = new User("Mango", 2, true);
+const poly = new User("Poly", 3, false);
