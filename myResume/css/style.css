@@ -95,7 +95,7 @@ body {
 /* FRONT PAGE */
 
 .front-page {
-  width: 320px;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,9 +157,6 @@ body {
   height: 30px;
   background: var(--c-accent);
   color: var(--c-light);
-}
-
-.logo-link {
 }
 
 .front-page-btn {
@@ -464,4 +461,62 @@ body {
 
 .team-project-item:last-child {
   margin-bottom: 0;
+}
+
+/* callback form */
+
+.callback-form-wrapp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--c-dark);
+  padding: 35px 30px 40px 30px;
+}
+
+.callback-form-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--txt-c-light);
+  width: 260px;
+}
+
+.callback-form-descr {
+  font-size: 17px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--txt-c-light);
+  margin-top: 20px;
+  width: 260px;
+}
+
+.callback-form-input {
+  min-width: 240px;
+  background: transparent;
+  padding-bottom: 15px;
+  font-size: 17px;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 30px;
+  border-bottom: 1px solid #3e4e6a;
+  color: var(--txt-c-light);
+}
+
+.callback-form-input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.callback-form-submit {
+  padding: 13px;
+  background: #ff6b08;
+  color: var(--c-light);
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 27px;
 }
